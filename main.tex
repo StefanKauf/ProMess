@@ -1,0 +1,82 @@
+\documentclass[11pt,oneside,bibtotoc,liststotoc]{scrbook}
+
+
+\input{header}     % Einbinden der Header Datei
+
+
+
+\begin{document}
+\thispagestyle{empty}
+\graphicspath{{images/}}
+\kern-13.5mm\includegraphics[width=55mm]{image/Titel/logo_umit.pdf}
+ 
+
+
+\vspace*{2cm}\par
+\begin{center}
+
+{\huge \textbf{ Laborpraktikum}} \\[1em]
+%{\huge \textbf{Testautomat}}
+\vspace{2cm}\par
+
+{\large Prozessmesstechnik}
+\vspace{1cm}\par
+{\large LV-Nummer: 844192}
+\vspace{1cm}\par
+Lehrveranstaltungsleiter: Prof. Dr. Alexander Sutor \\
+Semester: WS 22/23
+
+
+
+von \\[1ex]
+xxx xxxx \\
+Stefan Kaufmann    51867606 
+\vspace{1cm}\par
+
+Innsbruck, Januar 2023
+
+\end{center}
+
+%------------- Ende Titelseite --------------------------------
+
+
+\thispagestyle{empty}
+
+\setcounter{page}{1}
+\pagenumbering{Roman}
+\renewcommand{\baselinestretch}{1.00}\normalsize
+\tableofcontents
+\listoffigures
+\listoftables
+\renewcommand{\baselinestretch}{1.5}\normalsize
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Einbinden der Kapitel %%%%%%%%%%%%%
+\input{1_Grundlagen} 
+\newpage
+%input{content/2_Aufbau}
+\newpage
+%\input{content/3_Messungen}
+\newpage
+%\input{content/4_Auswertung}
+\newpage
+%\input{content/5_Zusammenfassung}
+
+
+
+
+
+
+
+% Das Literaturverzeichnis
+
+\bibliographystyle{IEEEtran}
+%\bibliography{Literatur}
+\clearpage
+
+%\input{4_Anhang}
+
+
+\end{document}

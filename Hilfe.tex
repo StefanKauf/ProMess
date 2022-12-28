@@ -1,0 +1,55 @@
+\chapter{Modellierung}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4 \textwidth]{image/3D-Modell.png}
+    \caption{Modell des Versuchsobjekt für die Simulation in Abaqus}
+    \label{img:3D_modell}
+\end{figure}
+
+Das Modell -- dargestellt in \autoref{img:3D_modell} -- wird nach den in der Aufgabenstellung vorgegebenen Maßen erstellt. Jene Abmaße, die nicht aus Aufgabenstellung hervor gehen, wie z.B. die Dimensionierung der Bohrlöcher oder die Kerbe vor Beginn des Risses, werden aus dem beigelegten Dokument \glqq Standard Test Method for Measurement of Fracture Toughness\grqq{}~\cite{astm} entnommen. 
+
+
+\section{Rissdefinition und Randbedingungen} 
+
+Um erfolgreich einen C(T)-Test in Abaqus simulieren zu können, muss der Riss erst als solcher definiert werden. Dafür wurde eine rechteckige Fläche entlang des Risses positioniert. Die numerische Berechnung der bruchmechanischen Kenngrößen wird über Pfadintegrale \glqq countour integral\grqq{} durchgeführt.  Dies wird bei der Rissdefinition festgelegt. Über den \glqq History Output\grqq{} kann die Anzahl der verwendeten Pfadintegrale festgelegt werden. Für diesen Versuch werden fünf Pfadintegrale berechnet.
+
+Da sich die Laibung während des Versuches nicht verformen und starr verhalten soll, wird eine \glqq rigid body constraint\grqq{} verwendet. Die Mantelfläche der Bohrung wird so mit einem Referenzpunkt in der Bohrungsmitte verknüpft. Beim Aufbringen einer Belastung an diesen Referenzpunkt findet also keine Verformung an der Laibung statt und die Kraft wird über die Bohrung aufgetragen. Als Zwangsbedingung werden translatorische Bewegungen in Richtung des Risses und der Bohrungsachse blockiert. Da die Laibung der Bohrung während des Versuches rotieren kann, wird diese Rotation um die Achse der Bohrung als einziges nicht blockiert.
+
+Die Belastung wird über eine totale Verschiebung von \SI{2}{\milli \meter} normal zum Riss zwischen den Bohrungsmittelpunkten aufgebracht. Dies wird durch zwei Zwangsbedingungen an den beiden Referenzpunkten in der Bohrungsmitte realisiert, wobei jede mit einer Rampenfunktion um \SI{1}{\mm} bewegt wird. Die daraus resultierende Reaktionskraft wird über den \glqq History Output\grqq{} ausgelesen.
+
+
+\section{Netzanpassungen} %2-3 Seiten
+
+Für die Simulation werden sechs Netze mit drei unterschiedlichen Netzfeinheiten (grob, mittel, fein) und zwei unterschiedlichen Vernetzungarten an der Rissspitze erstellt.  Das Modell wird mit 8-knotigen Elementen \glqq C3D8R\grqq{} vernetzt. Rund um die Rissspitze wird jedoch ein Kreis definiert, um dort unterschiedliche Vernetzungsmethoden zu verwenden und im späteren Verlauf zu vergleichen.  Die fertigen Netze sind in \autoref{img:Netze} dargestellt, wobei \autoref{img:Netze}~a) die verschiedenen Netzfeinheitsgrade abbildet und \autoref{img:Netze}~b) die degenerierte und normale Vernetzung an der Rissspitze gegenüberstellt. Für die Darstellung der verschiedenen Netzfeinheitsgrade in \autoref{img:Netze} a) wird das normale Netz in der Rissspitze verwendet. Die unterschiedlichen Stufen der Netzfeinheit können anhand der Dichte des Netzes unterschieden werden. Die Anzahl der Integrationspunkte und Elemente für das jeweilige Netz können aus der \autoref{tab:nodes} entnommen werden.
+
+\begin{figure}[h]
+   \begin{minipage}[b]{.5043\linewidth} % [b] => Ausrichtung an \caption
+      \includegraphics[width=\linewidth]{image/final.pdf}
+      \caption*{\textbf{a)}Netz mit normale 8-knotige Elemente an der Rissspitze}
+   \end{minipage}
+   \hspace{.01\linewidth}% Abstand zwischen Bilder
+   \begin{minipage}[b]{.37\linewidth} % [b] => Ausrichtung an \caption
+      \includegraphics[width=\linewidth]{image/degunormal.png}
+      \caption*{\textbf{b)} degeneriertes und normales Netz mit Fokus auf die Rissspitze}
+   \end{minipage}
+   \caption{Vernetztes Modell mit 8-Knotigen Elementen}
+   \label{img:Netze}
+\end{figure}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llcc}
+\hline
+                                                                                                                              &                                      & \multicolumn{1}{l}{\textbf{Integrationspunkte}} & \multicolumn{1}{l}{\textbf{Elemente}} \\ \hline
+\multicolumn{1}{l|}{\multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}kollabierte Knoten\\  an der Rissspitze\end{tabular}}}} & \multicolumn{1}{l|}{\textbf{fein}}   & 60804                                           & 52208                                 \\
+\multicolumn{1}{l|}{}                                                                                                         & \multicolumn{1}{l|}{\textbf{mittel}} & 5540                                            & 4108                                  \\
+\multicolumn{1}{l|}{}                                                                                                         & \multicolumn{1}{l|}{\textbf{grob}}   & 1905                                            & 1328                                  \\ \hline
+\multicolumn{1}{l|}{\multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}normale Knoten an\\ der Rissspitze\end{tabular}}}}     & \multicolumn{1}{l|}{\textbf{fein}}   & 61524                                           & 52744                                 \\
+\multicolumn{1}{l|}{}                                                                                                         & \multicolumn{1}{l|}{\textbf{mittel}} & 5685                                            & 4176                                  \\
+\multicolumn{1}{l|}{}                                                                                                         & \multicolumn{1}{l|}{\textbf{grob}}   & 1950                                            & 1340                                  \\ \hline
+\end{tabular}
+\caption{Anzahl der Integrationspunkte und Elemente für die verschiedenen Netze}
+\label{tab:nodes}
+\end{table}
