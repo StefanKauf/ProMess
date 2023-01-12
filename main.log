@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.20)  12 JAN 2023 15:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.20)  12 JAN 2023 19:54
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -613,7 +613,7 @@ File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (./main.aux
 
-LaTeX Warning: Label `Einleitung' multiply defined.
+LaTeX Warning: Label `Aufbau_Schall' multiply defined.
 
 
 LaTeX Warning: Label `Einleitung' multiply defined.
@@ -742,7 +742,7 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface.
 
-<image/Piezo_Skizze.png, id=60, 1228.59pt x 383.4325pt>
+<image/Piezo_Skizze.png, id=77, 1228.59pt x 383.4325pt>
 File: image/Piezo_Skizze.png Graphic file (type png)
 <use image/Piezo_Skizze.png>
 Package pdftex.def Info: image/Piezo_Skizze.png  used on input line 10.
@@ -751,12 +751,12 @@ Package pdftex.def Info: image/Piezo_Skizze.png  used on input line 10.
 
  <./image/Piezo_Skizze.png>] (./2_Aufbau.tex
 chapter 2.
-<image/charakterisierung.jpg, id=71, 4111.36pt x 3083.52pt>
+<image/charakterisierung.jpg, id=88, 4111.36pt x 3083.52pt>
 File: image/charakterisierung.jpg Graphic file (type jpg)
 <use image/charakterisierung.jpg>
 Package pdftex.def Info: image/charakterisierung.jpg  used on input line 30.
 (pdftex.def)             Requested size: 221.32687pt x 165.99475pt.
-<image/laufzeitmessung.jpg, id=72, 4111.36pt x 3083.52pt>
+<image/laufzeitmessung.jpg, id=89, 4111.36pt x 3083.52pt>
 File: image/laufzeitmessung.jpg Graphic file (type jpg)
 <use image/laufzeitmessung.jpg>
 Package pdftex.def Info: image/laufzeitmessung.jpg  used on input line 35.
@@ -773,19 +773,55 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ]) [3 <./image/charakterisierung.jpg> <./image/laufzeitmessung.jpg>] (./3_Messungen.tex
 chapter 3.
+Package svg Info: Last page of `./svg-inkscape/Impedanzgang_svg-tex.pdf' is 1 on input line 14.
+(./svg-inkscape/Impedanzgang_svg-tex.pdf_tex
+<./svg-inkscape/Impedanzgang_svg-tex.pdf, id=103, page=1, 433.62pt x 289.08pt>
+File: ./svg-inkscape/Impedanzgang_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Impedanzgang_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Impedanzgang_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 442.65375pt x 295.11794pt.
+)
+Package svg Info: Last page of `./svg-inkscape/Impedanzgang_unten_svg-tex.pdf' is 1 on input line 24.
+ (./svg-inkscape/Impedanzgang_unten_svg-tex.pdf_tex
+<./svg-inkscape/Impedanzgang_unten_svg-tex.pdf, id=106, page=1, 433.62pt x 289.08pt>
+File: ./svg-inkscape/Impedanzgang_unten_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Impedanzgang_unten_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Impedanzgang_unten_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 442.65375pt x 295.11794pt.
 ) [4
 
-] (./4_Auswertung.tex
+ <./svg-inkscape/Impedanzgang_svg-tex.pdf>] [5 <./svg-inkscape/Impedanzgang_unten_svg-tex.pdf>]
+<image/1_Quer.PNG, id=181, 803.0pt x 481.8pt>
+File: image/1_Quer.PNG Graphic file (type png)
+<use image/1_Quer.PNG>
+Package pdftex.def Info: image/1_Quer.PNG  used on input line 70.
+(pdftex.def)             Requested size: 221.32687pt x 132.79314pt.
+<image/2_quer.PNG, id=182, 803.0pt x 481.8pt>
+File: image/2_quer.PNG Graphic file (type png)
+<use image/2_quer.PNG>
+Package pdftex.def Info: image/2_quer.PNG  used on input line 75.
+(pdftex.def)             Requested size: 221.32687pt x 132.79314pt.
+
+Overfull \hbox (6.85744pt too wide) in paragraph at lines 69--78
+[][]  [] 
+ []
+
+<image/3_quer.PNG, id=183, 803.0pt x 481.8pt>
+File: image/3_quer.PNG Graphic file (type png)
+<use image/3_quer.PNG>
+Package pdftex.def Info: image/3_quer.PNG  used on input line 80.
+(pdftex.def)             Requested size: 221.32687pt x 132.79314pt.
+) [6 <./image/1_Quer.PNG (PNG copy)> <./image/2_quer.PNG (PNG copy)> <./image/3_quer.PNG (PNG copy)>] (./4_Auswertung.tex
 chapter 4.
-) [5
+) [7
 
 ] (./5_Zusammenfassung.tex
 chapter 5.
-) (./main.bbl [6
+) (./main.bbl [8
 
 ]
 chapter without number
-) [7
+) [9
 
 ] (./main.aux)
 
@@ -795,18 +831,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22292 strings out of 478287
- 444977 string characters out of 5849289
- 855591 words of memory out of 5000000
- 40103 multiletter control sequences out of 15000+600000
+ 22378 strings out of 478287
+ 447236 string characters out of 5849289
+ 856001 words of memory out of 5000000
+ 40164 multiletter control sequences out of 15000+600000
  475770 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,8n,106p,10634b,823s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (11 pages, 7070452 bytes).
+ 108i,15n,106p,10634b,823s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (13 pages, 7239973 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 305 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 
