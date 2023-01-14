@@ -10,7 +10,13 @@
 \contentsline {section}{\numberline {3.1}Charakteisierung des Wandlers}{4}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Messung der Schallgeschwindigkeit}{5}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Materialprüfung}{6}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Einleitung}{7}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Einleitung}{8}{chapter.5}%
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{9}{chapter*.10}%
+\contentsline {chapter}{\numberline {4}Auswertung}{8}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Charakteisierung des Wandlers}{8}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Messung der Schallgeschwindigkeit}{8}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Materialprüfung}{8}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Charakteisierung des Wandlers}{9}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Messung der Schallgeschwindigkeit}{9}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Materialprüfung}{9}{section.5.3}%
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{10}{chapter*.10}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
