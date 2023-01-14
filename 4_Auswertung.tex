@@ -1,14 +1,35 @@
 \chapter{Auswertung} \label{Auswertung}
 
+Im nachstehenden Kapitel werden die Ergebnisse mit den Grundlagen aus \autoref{Grundlagen} gegenübergestellt. 
+Daraus abgeleitet lassen sich Schlüsse über die plausibilität der Messungen ableiten. 
+Desweiteren wird die Bedeutung der Resonanzen aus \autoref{img:Impedanzgang} näher betrachtet.
+
+
+
 \section{Charakteisierung des Wandlers}
 
-
+Der Impedanzgang aus \autoref{img:Impedanzgang} weißt zwei eindeutige Resonanzfälle bei \SI{1}{MHz} sowie bei \SI{2.1}{MHz} auf. Der erste Resonanzfall stimmt mit dem theoretischen Resonanzfall sehr gut überein. Betrachtet man das Ersatzschaltbild aus \autoref{img:Ersartzschaltbild} entspricht das Minimum der Resonanz des mechanischen Systems.
+Das Maximum spiegelt jenes der Resonanz der Ersatzinduktivität mit dem theoretischen Kondensator \(C_0\) wieder. 
+Bei der Anregung des Pizowandlers wird neben der Dickenresonanz auch weitere Moden angeregt. Dies ist eine Erklärung für den zweiten Resonanzfall, welcher die Resonanz in Radialer Richtung wiederspiegelt. Jene Resonanzfälle unterhalb von \SI{1}{MHz} erfordern eine genauere Betrachtung.
+Bei niederen Frequnezen erhöht sich der Wiederstand des Wandlers \(Z = \frac{1}{fC}\). Dies hat einen geringeren Spannungsabfall am Vorwiederstand zur folge, welche durch die endliche Auflösung des AD-Wandlers nicht hinreichend genau verarbeitet werden kann. Die Folge davon ist in \autoref{img:Impedanzgang_unten} dargestellt.
+Erhöht man den Vorwiederstand stellt sich eine Glättung der unteren Resonanzfälle ein. Diese verschwinden jedoch nicht vollständig. Eine Erklärung hierfür kann die ungleichmäßige Kontaktierung des Wandlers sein. Hier können parasitäre Kapazitäten ausbilden welche in Resonaz gehen. 
+Eine weitere Erklärung liegt am Versuchsaufbau selbst. Der Piezowandler lag während der Messung am Labortisch. Damit kann es bei niederen Frequnezen zu mechanische Resonazen zwischen dem Wandler und seiner Umgebung kommen. Eine theoretisch freie Schwingung konnte der Versuchsaufbau nicht wiederspiegeln.  
+Weiters kann eine Wechselwirkung zwischen Radialer- und Dickenresonaz nicht ausgeschlossen werden.
 
 
 \section{Messung der Schallgeschwindigkeit} 
+Die erwartete Schallgeschwindigkeit von \SI{5660}{\meter/\second} konnte durch die Messung angenähert werden. Dies zeigt, dass eine Messung der Ausbreitungsgeschwindigkeit von Wellen innerhalb eines Körpers mittels Piezowandler gemessen werden kann.
+Zur Sörungsfreien Ausbreitung des Schalls muss der Schall ungehindert durch den Körper wandern können. Stoßstellen befinden sich bei den Übergangsstellen zwischen dem Wandler und dem Probekörper und den beiden Probekörpern. Eine Beeinflussung des Gels auf die Messung kann damit nicht verhindert werden. 
 
-
+Bei der Messung der Schallgeschwindigkeit im Probekörper wurde ein Geschwindigkeitsunterschied von 14 \% festgestellt. Hierbei ist hervorzuheben, dass eine kleine Änderung der Ausbreitungslänge, und damit der Pobendimensionen, einen Großen Einfluss auf das Endergebniss haben.
+Desweiteren wurde bei der Messung mit zwei Probekörpern unterschiedliche Proben verwendet. 
 
 
 
 \section{Materialprüfung}
+
+Bei dieser Messung ist der geringe Laufzeitunterschied der einzelnen Probekörper auffallend. Trotz unterschiedlicher Materialen innerhalb der Körper konnten keine signifkanten Unterschiede festgestellt werden. Dies kann auf zwei Gründe zurückzuführen sein.
+Die Störschicht ist so gering, dass diese dien Messung nur gering Beeinflussen konnte. Eine zweite Erklärung ist, dass die Störschicht nicht über die gesamte breite des Körpers reicht. Damit breitet sich die eingebrachte Schwingung über die homogene Brücke im Material aus.
+Im Gegensatz zur Laufzeit wurden in \autoref{img:Materialprufung} deutliche Unterschiede in der Amplitued der Schwingungsantwort festgestellt. Dies deutet auf eine Energieumwandlung im Körper hin. 
+Ursachen für eine Dämpfung am Übertragungsweg können Lufteinschlüsse darstellen. Die größte Dämpfung stellt sich bei Probekörper eins, die geringste bei Körper drei ein. 
+Damit kann Probekörper drei als der homogene, Körper zwei als jener mit wenig Lufteinschlüssen und Probekörper eins als jener mit großen Lufteinschlüssen identifiziert werden.
